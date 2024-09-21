@@ -95,31 +95,6 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 50,
               ),
-              Container(
-                height: 300,
-                child: ListView.separated(
-                    itemBuilder: (context, index) {
-                      return Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 20),
-                        padding: const EdgeInsets.symmetric(vertical: 10),
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 75, 140, 194),
-                            borderRadius: BorderRadius.circular(15)),
-                        child: ListTile(
-                          leading: Image.asset('assets/image/dog.jpg'),
-                          title: Text('Cat'),
-                          trailing: Icon(
-                            Icons.delete_forever,
-                            color: Colors.black,
-                          ),
-                        ),
-                      );
-                    },
-                    separatorBuilder: (context, index) => const SizedBox(
-                          height: 20,
-                        ),
-                    itemCount: 3),
-              ),
             ],
           ),
         ),
